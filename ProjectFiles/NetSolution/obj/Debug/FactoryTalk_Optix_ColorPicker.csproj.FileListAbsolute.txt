@@ -6,6 +6,7 @@ C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryT
 C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.AssemblyInfoInputs.cache
 C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.AssemblyInfo.cs
 C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.csproj.CoreCompileInputs.cache
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.sourcelink.json
 C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.dll
 C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\refint\FactoryTalk_Optix_ColorPicker.dll
 C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.pdb

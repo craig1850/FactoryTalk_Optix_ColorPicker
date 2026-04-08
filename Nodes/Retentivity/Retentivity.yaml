@@ -205,6 +205,30 @@ Children:
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
+    - Name: SpinBoxText
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/SpinBoxTextColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Rect1FillColor
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/Rectangle1Color"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
   - Name: WriteDelay
     Type: BaseDataVariableType
     DataType: Duration

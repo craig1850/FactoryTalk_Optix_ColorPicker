@@ -189,6 +189,11 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#000000"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/SpinBoxTextColor"
     - Name: MinValue
       Type: BaseDataVariableType
       DataType: Double
@@ -267,6 +272,11 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#ffffff"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/Rectangle1Color"
     - Name: CornerRadius
       Type: BaseDataVariableType
       DataType: Size
@@ -364,27 +374,7 @@ Children:
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
               ValueRank: ScalarOrOneDimension
-              Value: [{"IdType":0,"Id":0,"Namespace":-1},{"IdType":2,"Id":"4b26ef29fdca41f17997ddd200c72a99","Namespace":18},{"IdType":2,"Id":"766dbfaed80f42e2a053d37d4121fab3","Namespace":18}]
-              Children:
-              - Name: DynamicLink_0
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../../Rectangle1/FillColor@NodeId"
-                Children:
-                - Name: ParentElementAccess
-                  Type: BaseVariableType
-                  DataType: ElementAccess
-                  Value: 
-                   {
-                    "TypeId": {
-                     "Id": 313,
-                     "Namespace": 1
-                    },
-                    "Body": {
-                     "ArrayIndex": [0],
-                     "FieldIndexes": []
-                    }
-                   }
+              Value: ["/Objects/FactoryTalk_Optix_ColorPicker/Model/Rectangle1Color","/Objects/FactoryTalk_Optix_ColorPicker/Model/StyleSheetFalse","/Objects/FactoryTalk_Optix_ColorPicker/Model/TargetObject"]
             - Name: ParentItem
               Type: BaseDataVariableType
               DataType: NodeId
@@ -573,27 +563,7 @@ Children:
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"OpenDialogAliasNodeDescription"}
               ValueRank: ScalarOrOneDimension
-              Value: [{"IdType":0,"Id":0,"Namespace":-1},{"IdType":2,"Id":"4b26ef29fdca41f17997ddd200c72a99","Namespace":18},{"IdType":2,"Id":"766dbfaed80f42e2a053d37d4121fab3","Namespace":18}]
-              Children:
-              - Name: DynamicLink_0
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../../SpinBox1/TextColor@NodeId"
-                Children:
-                - Name: ParentElementAccess
-                  Type: BaseVariableType
-                  DataType: ElementAccess
-                  Value: 
-                   {
-                    "TypeId": {
-                     "Id": 313,
-                     "Namespace": 1
-                    },
-                    "Body": {
-                     "ArrayIndex": [0],
-                     "FieldIndexes": []
-                    }
-                   }
+              Value: ["/Objects/FactoryTalk_Optix_ColorPicker/Model/SpinBoxTextColor","/Objects/FactoryTalk_Optix_ColorPicker/Model/StyleSheetFalse","/Objects/FactoryTalk_Optix_ColorPicker/Model/TargetObject"]
             - Name: ParentItem
               Type: BaseDataVariableType
               DataType: NodeId
@@ -3945,6 +3915,29 @@ Children:
         DataType: HorizontalAlignment
         ModellingRule: Optional
         Value: 2
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "if({0}==0,true,false)"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/LastSessionStyleSheet"
     - Name: Label2
       Type: Label
       Children:
@@ -4064,6 +4057,29 @@ Children:
         DataType: String
         ModellingRule: Optional
         Value: "n0"
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "if({0}==0,true,false)"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/LastSessionStyleSheet"
 - Name: ScreenTwo
   Id: g=dd704704007d8454c6bec24ea09e9364
   Supertype: Screen
@@ -4086,12 +4102,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 190.0
+      Value: 30.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 180.0
+      Value: 400.0
     - Name: Label1
       Type: Label
       Children:
@@ -4135,12 +4151,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 510.0
+      Value: 290.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 170.0
+      Value: 390.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4165,17 +4181,22 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 370.0
+      Value: 410.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 60.0
+      Value: 400.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 40.0
+    - Name: CheckedText
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Hold Me"}
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
@@ -4196,3 +4217,143 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 495.0
+  - Name: DataGrid1
+    Type: DataGrid
+    Children:
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/LastSessionStyleSheet"
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+    - Name: Query
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Columns
+      Type: BaseObjectType
+      Children:
+      - Name: DataGridColumn1
+        Type: DataGridColumn
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Item Name"}
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: HeaderAlignment
+          Type: BaseDataVariableType
+          DataType: TextHorizontalAlignment
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+        - Name: OrderBy
+          Type: BaseDataVariableType
+          DataType: NodePath
+        - Name: DataItemTemplate
+          Type: DataGridLabelItemTemplate
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}@BrowseName"
+      - Name: DataGridColumn2
+        Type: DataGridColumn
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Item Value"}
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: HeaderAlignment
+          Type: BaseDataVariableType
+          DataType: TextHorizontalAlignment
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+        - Name: OrderBy
+          Type: BaseDataVariableType
+          DataType: NodePath
+        - Name: DataItemTemplate
+          Type: DataGridLabelItemTemplate
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}@Value"
+    - Name: SelectedItem
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/LastSessionStyleSheet"
+    - Name: UISelectedItem
+      Type: BaseDataVariableType
+      DataType: NodeId
+      AccessLevel: Read
+    - Name: SortColumn
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: SortOrder
+      Type: BaseDataVariableType
+      DataType: SortOrderEnum
+    - Class: Reference
+      Target: ns=5;i=504
+      Direction: Forward
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 780.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 310.0
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/LastSessionStyleSheet"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0

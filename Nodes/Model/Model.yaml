@@ -1,4 +1,5 @@
 Name: Model
+Id: g=eecf32e5a9c082e96d15d5c0f7cf0e9b
 Type: ModelCategoryFolder
 Children:
 - Name: LastSessionStyleSheet
@@ -6,9 +7,10 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
 - Name: SpinBoxTextColor
+  Id: g=245b48819fe131aaf31a5d0eea69e490
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#ff0000"
+  Value: "#3b3b3b"
 - Name: TargetObject
   Id: g=766dbfaed80f42e2a053d37d4121fab3
   Type: BaseDataVariableType
@@ -45,3 +47,8 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../LastSessionStyleSheet"
+- Name: Rectangle1Color
+  Id: g=430887a9df45914a283cc2009649e460
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#ffffff"
