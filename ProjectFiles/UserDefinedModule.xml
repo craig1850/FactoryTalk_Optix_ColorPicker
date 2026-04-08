@@ -19,7 +19,7 @@
     <TypeMappings>
         <TypeMapping>
             <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="b331a1c78292b402b9fb7bea8d50a6ad" />
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="07b10933e4ee4d4cbf84518e190ea9be" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
@@ -29,12 +29,17 @@
         </TypeMapping>
         <TypeMapping>
             <TargetType>
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="dd704704007d8454c6bec24ea09e9364" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
                 <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="af5cb295c2b5c257ddb546654642e79c" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
             <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="b82f1c8faa8616e3112b21fedcc6f6a4" />
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="b331a1c78292b402b9fb7bea8d50a6ad" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
@@ -44,17 +49,22 @@
         </TypeMapping>
         <TypeMapping>
             <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="124e07977d75c1e34bbfdca6063f7bef" />
-            </TargetType>
-        </TypeMapping>
-        <TypeMapping>
-            <TargetType>
                 <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="2cb559f71b29d550b4961f6eed5b03d4" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
             <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="dd704704007d8454c6bec24ea09e9364" />
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="124e07977d75c1e34bbfdca6063f7bef" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="b82f1c8faa8616e3112b21fedcc6f6a4" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="e348b14dbc7035688714c7ced8a72128" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
@@ -89,17 +99,7 @@
         </TypeMapping>
         <TypeMapping>
             <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="323ecbd80fe0dccc66307959b261f54a" />
-            </TargetType>
-        </TypeMapping>
-        <TypeMapping>
-            <TargetType>
                 <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="d17d8ab3d7f8047c35a02cbe0b7248c6" />
-            </TargetType>
-        </TypeMapping>
-        <TypeMapping>
-            <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="632709bc0ca708c922da2f68cb20eb09" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
@@ -109,22 +109,27 @@
         </TypeMapping>
         <TypeMapping>
             <TargetType>
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="f0afd51b3f49febd40b32153974e81b8" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
                 <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="548a589cc1532b072d9d24316f7b6090" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
             <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="07b10933e4ee4d4cbf84518e190ea9be" />
-            </TargetType>
-        </TypeMapping>
-        <TypeMapping>
-            <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="e348b14dbc7035688714c7ced8a72128" />
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="632709bc0ca708c922da2f68cb20eb09" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
             <TargetType>
                 <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="c05a81edcb91fa074772f19543ea1b38" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="323ecbd80fe0dccc66307959b261f54a" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
@@ -135,11 +140,6 @@
         <TypeMapping>
             <TargetType>
                 <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="77122192dcccfaa39d1e78d7bd27e222" />
-            </TargetType>
-        </TypeMapping>
-        <TypeMapping>
-            <TargetType>
-                <NodeId namespaceUri="FactoryTalk_Optix_ColorPicker" guid="f0afd51b3f49febd40b32153974e81b8" />
             </TargetType>
         </TypeMapping>
         <TypeMapping>
