@@ -240,3 +240,17 @@ Children:
         DataType: NodeId
         ModellingRule: None
         Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/PurpleBlush"
+    - Name: Pair9
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 9
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/Crimson"
