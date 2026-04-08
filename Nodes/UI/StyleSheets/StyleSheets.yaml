@@ -1,0 +1,3473 @@
+Name: StyleSheets
+Type: FolderType
+Children:
+- Name: DefaultStyleSheet
+  Id: g=b36c73502df03e24d7c3a0022dc0ce7a
+  Type: StyleSheet
+  Children:
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+  - Name: AccentColor
+    Id: g=3608bea95e43984d6713df6821ccb34c
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#0fafff"
+  - Name: WindowColor
+    Id: g=1908e06dfcd9f120e8ccb993092ea0c2
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: ScreenColor
+    Type: BaseDataVariableType
+    DataType: Color
+  - Name: DataInputBackgroundColor
+    Id: g=a409b2dd2e746515c5b355dbeb66ffbe
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 13.0
+  - Name: TextColor
+    Id: g=e6d5bf4a63ef7b14decf72862e2ba6c1
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3b3b3b"
+  - Name: BorderColor
+    Id: g=4f3423e6f2ace02a0f2c885e4e83c39e
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#b3b3b3"
+  - Name: AccentTextColor
+    Id: g=0d6d087c6e176b346eba100c0d5260f5
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: DataInputTextColor
+    Id: g=c480e06a4aebaa9401fe0c462471a225
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3b3b3b"
+  - Name: InteractiveBackgroundColor
+    Id: g=7dba2b4a3f72cc1d87d2a06b697b2db5
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f0f0f0"
+  - Name: InteractiveColor
+    Id: g=5f89d46c17e445f055eb139d29b3dc75
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e4e4e4"
+  - Name: Radius
+    Id: g=fe91d6d9940a6f25a9bda72b1e03c9db
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 5.0
+  - Name: InteractiveColorGradientPercent
+    Id: g=96f6e7cc925acef4399ce7cfed32ed07
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.15000000596046448
+- Name: FriendlyDark1
+  Id: g=46e597cc4be8a9bd78c74102ed171cd0
+  Type: StyleSheet
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: WindowColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#151e27"
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#65b2ef"
+  - Name: InteractiveBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#212d3b"
+  - Name: InteractiveColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#28394a"
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: BorderWidth
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: DataInputBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#212d3b"
+  - Name: DataInputTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 13.0
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3b5067"
+  - Name: Radius
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#65b2ef"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: FontItalic
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 13.0
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#65b2ef"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#28394a"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#65b2ef"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#28394a"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff00"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+      Children:
+      - Name: PlaceHolderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6e7f91"
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#223748"
+      - Name: HandleBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#cfcfcf"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+      Children:
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#65b2ef"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: HandleSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 23.0
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+      Children:
+      - Name: GridColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#304155"
+      - Name: AxisColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#304155"
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: HorizontalLineColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#151e27"
+      - Name: VerticalLineColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#151e27"
+      - Name: HeaderBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#65b2ef"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#212d3b"
+      - Name: HeaderTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#65b2ef"
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#243140"
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#1b2733"
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+  - Name: ScreenColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#151e27"
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+  - Name: ns=11;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 11
+      },
+      "Body": {
+       "libraryGuid": "8f879552c67d48428e3c5ec6ef776800",
+       "objectGuid": "ece544ab344ba3cd518defa408e95765",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: FriendlyLight1
+  Id: g=acb37394d3c49de70f4da43f26f5d43d
+  Type: StyleSheet
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 13.0
+  - Name: DataInputBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: Radius
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#0fafff"
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: FontItalic
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 13.0
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b00"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f7f7f7"
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f7f7f7"
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: VerticalLineColor
+        Type: BaseDataVariableType
+        DataType: Color
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+  - Name: ScreenColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+  - Name: ns=11;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 11
+      },
+      "Body": {
+       "libraryGuid": "8f879552c67d48428e3c5ec6ef776800",
+       "objectGuid": "201506154dd72342305722824da541a6",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: ISAStyleSheet1
+  Id: g=cbee75f57462e8d3c31a0c6a3ea09ca3
+  Type: StyleSheet
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  DisplayName: {"LocaleId":"en-US","Text":"ISA Style Sheet"}
+  Children:
+  - Name: Radius
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 4.0
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: FocusGlowSize
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#afafaf"
+  - Name: AccentTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3f3f3f"
+  - Name: AccentBorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3f3f3f"
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3f3f3f"
+  - Name: FocusColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3f3f3f"
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#afafaf"
+  - Name: InteractiveColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e4e4e4"
+  - Name: FontWeight
+    Type: BaseDataVariableType
+    DataType: FontWeightEnum
+    Value: 400
+  - Name: ScreenColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e0e0e0"
+  - Name: WindowColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e0e0e0"
+  - Name: InteractiveDropShadowSize
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 16.0
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+      Children:
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f2f2f2"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.5
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: PressedTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.5
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+      - Name: FontItalic
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Command
+      Type: ButtonStyle
+      Children:
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 2.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c0c0c0"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: CommandFeedbackActive
+      Type: ButtonStyle
+      Children:
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#afafaf"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6a6a6a"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Navigation
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: HorizontalPaddingPercent
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.75
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+      Children:
+      - Name: SelectionColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+      - Name: ActiveBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: ActiveSecondaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c0c0c0"
+      - Name: InactiveColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c0c0c0"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+      - Name: ActivePrimaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: TabSpacing
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+    - Name: ISANavPanel
+      Type: NavigationPanelStyle
+      Children:
+      - Name: ActivePrimaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+      - Name: InactiveColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c0c0c0"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e0e0e0"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+    - Name: Table
+      Type: AccordionStyle
+      Children:
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+    - Name: Data Label
+      Type: LabelStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 14.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            Value: "{0} *0.8"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../FontPixelSize"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+    - Name: Live Data
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a4191"
+    - Name: Live Data Primary
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a4191"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 19.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            Value: "{0} *1.2"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../FontPixelSize"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+    - Name: 'De-emphasized Text'
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#919191"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 14.0
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            Value: "{0} *0.8"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../FontPixelSize"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+    - Name: Emphasized Text
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+    - Name: Heading
+      Type: LabelStyle
+      Children:
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+    - Name: Warning
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: Fault
+      Type: LabelStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+      - Name: ActiveTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: ActiveColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+      - Name: ActiveTickColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: ActiveTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3f3f3f"
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+  - Name: AnimationDuration
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 150
+  - Name: DisabledOpacity
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.4000000059604645
+  - Name: DataInputBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: DataInputTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3b3b3b"
+  - Name: InteractiveBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f0f0f0"
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+  - Name: ns=11;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 11
+      },
+      "Body": {
+       "libraryGuid": "8f879552c67d48428e3c5ec6ef776800",
+       "objectGuid": "291eb61433ef49cdf19d53ae39ec9a6c",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: MaterialDark1
+  Id: g=ac45d3de061371d4c1b2bd2f6ec3668b
+  Type: StyleSheet
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: WindowColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#121212"
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00bcd4"
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e4e4e4"
+  - Name: AccentTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: DataInputBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#1c1c1c"
+  - Name: DataInputTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ebebeb"
+  - Name: InteractiveBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#303030"
+  - Name: BorderWidth
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: InteractiveColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#242424"
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 13.0
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+      Children:
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#1b1b1b"
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00bcd4"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: FontFamily
+        Type: BaseDataVariableType
+        DataType: Font
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: FontItalic
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 13.0
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00bcd4"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#242424"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00bcd4"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#242424"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e400"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00bcd4"
+      - Name: HandleSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 22.0
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#242424"
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+  - Name: ScreenColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#121212"
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+  - Name: ns=11;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 11
+      },
+      "Body": {
+       "libraryGuid": "8f879552c67d48428e3c5ec6ef776800",
+       "objectGuid": "dda088ed224891ea3c936d00528ad3d2",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: FeatureDemo2
+  Id: g=8ec802466c127939609fdb6aef28403b
+  Type: StyleSheet
+  Children:
+  - Name: WindowColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#235d9f"
+  - Name: AccentBorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#075982"
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 16.0
+  - Name: DisabledOpacity
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.6499999761581421
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b00"
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+      Children:
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#b3b3b300"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f00"
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+      - Name: ActiveBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f00"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f0f0f0"
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: InactiveColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e400"
+      - Name: ActivePrimaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#007aff"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e400"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 14.0
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+      - Name: InactiveTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#9e9e9e"
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: SelectionBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+      Children:
+      - Name: HandleBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#b3b3b300"
+      - Name: Size
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 17.0
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f0f0f000"
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+      Children:
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: HeaderBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#dbdfe2"
+      - Name: ContentBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#dbdfe2"
+      - Name: HeaderIconPosition
+        Type: BaseDataVariableType
+        DataType: HeaderIconPositionEnum
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+      Children:
+      - Name: HoleSizePercent
+        Type: BaseDataVariableType
+        DataType: Percentage
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+  - Name: FontFamily
+    Type: BaseDataVariableType
+    DataType: Font
+    Value: "Roboto"
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+- Name: SpaceShip
+  Id: g=3c66b2f551b16810df683b8095c60766
+  Type: StyleSheet
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: WindowColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#95a5b9"
+  - Name: InteractiveBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#41445f"
+  - Name: InteractiveColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#41445f"
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: BorderWidth
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: DataInputBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#212d3b"
+  - Name: DataInputTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 13.0
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3b5067"
+  - Name: FontFamily
+    Type: BaseDataVariableType
+    DataType: Font
+    Value: "Share Tech Mono"
+  - Name: Radius
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#55ffdf"
+  - Name: FocusColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#55ffdf"
+  - Name: AccentTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#41445f"
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+      Children:
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#375454"
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 2.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.0
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+      Children:
+      - Name: PlaceHolderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6e7f91"
+      - Name: FocusBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: HandleBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#cfcfcf"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: ActiveBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#375454"
+      - Name: ActiveTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+      Children:
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 3.0
+      - Name: HandleSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+      - Name: ForegroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0c1524"
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+      Children:
+      - Name: GridColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#304155"
+      - Name: AxisColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#304155"
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 2.0
+      - Name: VerticalLineColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#60657700"
+      - Name: HeaderBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#37545481"
+      - Name: HeaderBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#375454"
+      - Name: SelectionTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#375454"
+      - Name: SelectionBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b506700"
+      - Name: HorizontalLineColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#606577bd"
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#243140"
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#1b2733"
+      - Name: Size
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: AutoHide
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#55ffdf"
+      - Name: HandleBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#61e4cb"
+      - Name: HandleRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 3.0
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+      Children:
+      - Name: Spacing
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 15.0
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+    - Name: LabelStyle1
+      Type: LabelStyle
+      Children:
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#41445f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+- Name: FlourishStyleSheet
+  Id: g=40281747547715affd79423bd876320b
+  Type: StyleSheet
+  Children:
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+    - Name: Primary
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0f316b"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0f316b"
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Secondary
+      Type: ButtonStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c9d3df"
+    - Name: Tertiary
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c9d3df"
+      - Name: PressedBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#c9d3df"
+    - Name: HeaderBar
+      Type: ButtonStyle
+      Children:
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+      - Name: ActiveBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: ActiveHandleBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: ActiveHandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: ActiveBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+      Children:
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: ForegroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: HandleBorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: HandleColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: InactiveColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f1f4f6"
+      - Name: TabPadding
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+      - Name: TabSpacing
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+      - Name: ActivePrimaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: InactiveTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: ActiveSecondaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#235d9f"
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+      Children:
+      - Name: Spacing
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 2.0
+  - Name: FocusColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#235d9f"
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#235d9f"
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#235d9f"
+  - Name: AccentBorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#235d9f"
+  - Name: ScreenColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f8fbfc"
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#b8bcbf"
+  - Name: InteractiveColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e8ebed"
+  - Name: InteractiveBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: FocusGlowSize
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: Radius
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 4.0
+  - Name: FontFamily
+    Type: BaseDataVariableType
+    DataType: Font
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+  - Name: ns=11;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 11
+      },
+      "Body": {
+       "libraryGuid": "8560643947c8fed85fca84d8b94cace1",
+       "objectGuid": "f2a711db77190e84e753575ec26b93b9",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+  - Name: DataInputTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#000000"
+- Name: PurpleBlush
+  Id: g=5630a3e8b7ee486ec609f31f041c6561
+  Type: StyleSheet
+  Children:
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#62ff00"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#62ff00"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#b133ff"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#62ff00"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#b133ff"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+    - Name: RedCancelCircularStyle
+      Type: ButtonStyle
+      ReferenceType: HasOrderedComponent
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+    - Name: PalletizerInputBox
+      Type: InputBoxStyle
+      ReferenceType: HasOrderedComponent
+      Children:
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#341539"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#b133ff"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+    - Name: BigHandleGaugeStyle
+      Type: GaugeStyle
+      ReferenceType: HasOrderedComponent
+      Children:
+      - Name: HandleSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 35.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 14.0
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: ActiveSecondaryColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: SelectionTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: SelectionBackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#62ff0073"
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+    - Name: PalletizerStyleLabel
+      Type: LabelStyle
+      ReferenceType: HasOrderedComponent
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 16.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 4.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6e00b3be"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#b133ff"
+    - Name: PalletizerDisplayRectangle
+      Type: RectangleStyle
+      ReferenceType: HasOrderedComponent
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6e00b3be"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#b133ff"
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 7.0
+    - Name: LargeRectangleStyle
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#6e00b3be"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#b133ff"
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 7.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+  - Name: WindowColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3c0061"
+  - Name: AccentColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#62ff00"
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: InteractiveBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#6e00b3"
+  - Name: InteractiveColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#6e00b3"
+  - Name: AccentTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#6e00b3"
+  - Name: DataInputBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#341539"
+  - Name: DataInputTextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#ffffff"
+  - Name: Radius
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 7.0
+  - Name: FocusGlowSize
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 6.0
+  - Name: BorderColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#b133ff"
+  - Name: FontPixelSize
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 13.0
+  - Name: FontFamily
+    Type: BaseDataVariableType
+    DataType: Font
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.4000000059604645
+  - Name: BorderWidth
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 1.0
+  - Name: InteractiveDropShadowSize
+    Type: BaseDataVariableType
+    DataType: Size

@@ -1,0 +1,216 @@
+Name: Retentivity
+Type: RetentivityCategoryFolder
+Children:
+- Name: SecurityRetentivityStorage
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Security"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+  - Name: DeltaObserverEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true
+- Name: AlarmsRetentivityStorage
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Alarms"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+  - Name: DeltaObserverEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true
+- Name: ColorThemesStorage
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Type: BaseObjectType
+    Children:
+    - Name: WindowColor
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/WindowColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: InputBoxColor
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/DataInputBackgroundColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Style
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/LastSessionStyleSheet"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: AccentColor
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/AccentColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: TextColor
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/TextColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: BorderColor
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/BorderColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: AccentText
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/AccentTextColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: DataInputText
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/DataInputTextColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: InteractiveBkgnd
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/InteractiveBackgroundColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: InteractiveControls
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/InteractiveColor"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ControlsRadius
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/Radius"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: ColorGradientPercent
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet/InteractiveColorGradientPercent"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+  - Name: DeltaObserverEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true

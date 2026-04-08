@@ -1,0 +1,47 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: LastSessionStyleSheet
+  Id: g=51740bf658b8e835b31f222de3d915a5
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: SpinBoxTextColor
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#ff0000"
+- Name: TargetObject
+  Id: g=766dbfaed80f42e2a053d37d4121fab3
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Placeholder"
+- Name: StyleSheetTrue
+  Id: g=81a123309e36c74f0e3eb76cf3e4f53d
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: StyleSheetFalse
+  Id: g=4b26ef29fdca41f17997ddd200c72a99
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: NavPanelsAppearance
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "if({0}==7,\"Underlined\",\"Default\")"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../LastSessionStyleSheet"

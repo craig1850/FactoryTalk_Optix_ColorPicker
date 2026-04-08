@@ -1,0 +1,242 @@
+Name: Converters
+Id: g=2bf67f1b2dbd8da4152931edc231eba4
+Type: ConvertersCategoryFolder
+Children:
+- Name: AlphaARGBtoDecimal
+  Id: g=af5cb295c2b5c257ddb546654642e79c
+  Supertype: ExpressionEvaluator
+  ReferenceType: HasComponent
+  Children:
+  - Name: Expression
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "{0} >> 24"
+  - Name: ns=3;Source0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional
+    Value: 2
+- Name: RedARGBtoDecimal
+  Id: g=43bbf703b8ed03011a8d4f9ec513ba09
+  Supertype: ExpressionEvaluator
+  ReferenceType: HasComponent
+  Children:
+  - Name: Expression
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "({0} & 16711680) >> 16"
+  - Name: ns=3;Source0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional
+    Value: 2
+- Name: GreenARGBtoDecimal
+  Id: g=124e07977d75c1e34bbfdca6063f7bef
+  Supertype: ExpressionEvaluator
+  ReferenceType: HasComponent
+  Children:
+  - Name: Expression
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "({0} & 65280) >> 8"
+  - Name: ns=3;Source0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional
+    Value: 2
+- Name: BlueARGBtoDecimal
+  Id: g=b82f1c8faa8616e3112b21fedcc6f6a4
+  Supertype: ExpressionEvaluator
+  ReferenceType: HasComponent
+  Children:
+  - Name: Expression
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "{0} & 255"
+  - Name: ns=3;Source0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional
+    Value: 2
+- Name: StyleSheetIntegerConverter
+  Id: g=2cb559f71b29d550b4961f6eed5b03d4
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+  - Name: ns=3;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet"
+    - Name: Pair1
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 1
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/FriendlyDark1"
+    - Name: Pair2
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 2
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/FriendlyLight1"
+    - Name: Pair3
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 3
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/ISAStyleSheet1"
+    - Name: Pair4
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 4
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/MaterialDark1"
+    - Name: Pair5
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 5
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/FeatureDemo2"
+    - Name: Pair6
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 6
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/SpaceShip"
+    - Name: Pair7
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 7
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/FlourishStyleSheet"
+    - Name: Pair8
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 8
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ModellingRule: None
+        Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/PurpleBlush"

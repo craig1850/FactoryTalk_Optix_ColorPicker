@@ -1,0 +1,12 @@
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\bin\FactoryTalk_Optix_ColorPicker.deps.json
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\bin\FactoryTalk_Optix_ColorPicker.dll
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\bin\FactoryTalk_Optix_ColorPicker.pdb
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.csproj.AssemblyReference.cache
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.AssemblyInfoInputs.cache
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.AssemblyInfo.cs
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.csproj.CoreCompileInputs.cache
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.dll
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\refint\FactoryTalk_Optix_ColorPicker.dll
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\FactoryTalk_Optix_ColorPicker.pdb
+C:\Users\Maint\Documents\Rockwell Automation\FactoryTalk Optix\Projects\FactoryTalk_Optix_ColorPicker\ProjectFiles\NetSolution\obj\Debug\ref\FactoryTalk_Optix_ColorPicker.dll

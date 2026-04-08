@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FactoryTalk_Optix_ColorPicker/1.0.0": {
+        "runtime": {
+          "FactoryTalk_Optix_ColorPicker.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FactoryTalk_Optix_ColorPicker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
