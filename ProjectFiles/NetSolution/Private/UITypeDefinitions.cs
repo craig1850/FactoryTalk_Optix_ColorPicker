@@ -10,8 +10,18 @@ public class MainWindow : FTOptix.UI.Window
 {
 }
 
-[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "dd704704007d8454c6bec24ea09e9364")]
-public class ScreenTwo : FTOptix.UI.Screen
+[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "343e9a553a1648e3de95b91f6d877b43")]
+public class DeviceSettingsWidget : FTOptix.UI.Screen
+{
+}
+
+[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "323ecbd80fe0dccc66307959b261f54a")]
+public class EmptyPanel : FTOptix.UI.Panel
+{
+}
+
+[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "d17d8ab3d7f8047c35a02cbe0b7248c6")]
+public class WAN : FTOptix.UI.Panel
 {
 }
 
@@ -20,8 +30,8 @@ public class HomeScreen : FTOptix.UI.Screen
 {
 }
 
-[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "e348b14dbc7035688714c7ced8a72128")]
-public class ConnectionPanel : FTOptix.UI.Panel
+[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "dd704704007d8454c6bec24ea09e9364")]
+public class ScreenTwo : FTOptix.UI.Screen
 {
 }
 
@@ -40,11 +50,6 @@ public class NetworkSettingsWidget : FTOptix.UI.Screen
 {
 }
 
-[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "343e9a553a1648e3de95b91f6d877b43")]
-public class DeviceSettingsWidget : FTOptix.UI.Screen
-{
-}
-
 [MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "41382c57dc616862c1af276ff6942abc")]
 public class FTRemoteAccessWidget : FTOptix.UI.Screen
 {
@@ -55,18 +60,8 @@ public class LAN : FTOptix.UI.Panel
 {
 }
 
-[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "d17d8ab3d7f8047c35a02cbe0b7248c6")]
-public class WAN : FTOptix.UI.Panel
-{
-}
-
 [MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "9cf154c923572624320f16c16fa657a3")]
 public class Configuration : FTOptix.UI.Panel
-{
-}
-
-[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "f0afd51b3f49febd40b32153974e81b8")]
-public class RequestAssistanceDisabledPanel : FTOptix.UI.Panel
 {
 }
 
@@ -80,13 +75,13 @@ public class Diagnostics : FTOptix.UI.Panel
 {
 }
 
-[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "c05a81edcb91fa074772f19543ea1b38")]
-public class AcceptDenyIncomingRequestPanel : FTOptix.UI.Panel
+[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "e348b14dbc7035688714c7ced8a72128")]
+public class ConnectionPanel : FTOptix.UI.Panel
 {
 }
 
-[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "323ecbd80fe0dccc66307959b261f54a")]
-public class EmptyPanel : FTOptix.UI.Panel
+[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "c05a81edcb91fa074772f19543ea1b38")]
+public class AcceptDenyIncomingRequestPanel : FTOptix.UI.Panel
 {
 }
 
@@ -102,5 +97,10 @@ public class RequestAssistancePanel : FTOptix.UI.Panel
 
 [MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "dc2c41b238ed9ce9aa4f98d28d04b528")]
 public class RequestAssistanceEnabledPanel : FTOptix.UI.Panel
+{
+}
+
+[MapType(NamespaceUri = "FactoryTalk_Optix_ColorPicker", Guid = "f0afd51b3f49febd40b32153974e81b8")]
+public class RequestAssistanceDisabledPanel : FTOptix.UI.Panel
 {
 }

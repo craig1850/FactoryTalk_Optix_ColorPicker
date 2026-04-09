@@ -112,7 +112,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 220.0
+      Value: 210.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -126,7 +126,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       ModellingRule: Optional
-      Value: true
   - Name: OptionButton1
     Type: RadioButton
     Children:
@@ -198,11 +197,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Double
       ModellingRule: Optional
-    - Name: MaxValue
-      Type: BaseDataVariableType
-      DataType: Double
-      ModellingRule: Optional
-      Value: 20000.0
     - Name: InputBoxStyle
       Type: BaseDataVariableType
       DataType: String
@@ -657,7 +651,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 208.0
+      Value: 240.0
     - Name: Rows
       Type: BaseDataVariableType
       DataType: String
@@ -678,7 +672,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 280.0
+      Value: 245.0
     - Name: CurrentStyleSheetLabel
       Type: Label
       Children:
@@ -811,6 +805,17 @@ Children:
                 Type: BaseDataVariableType
                 DataType: LocalizedText
                 Value: {"LocaleId":"en-US","Text":"Crimson"}
+            - Name: Pair10
+              Type: ValueMapPair
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: Int32
+                Value: 10
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"LocaleId":"en-US","Text":"Lemon Pie"}
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -1940,6 +1945,128 @@ Children:
         DataType: Boolean
         ModellingRule: Optional
         Value: true
+    - Name: LemonPieButton
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Lemon Pie"}
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 100.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 35.0
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer2
+            Type: BaseObjectType
+            Children:
+            - Name: ns=3;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Commands/VariableCommands"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=3;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Set"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: VariableToModify
+                Type: BaseDataVariableType
+                DataType: VariablePointer
+                Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+                Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/LastSessionStyleSheet"
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Int32
+                Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+                Value: 10
+              - Name: ArrayIndex
+                Type: BaseDataVariableType
+                DataType: UInt32
+                Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+                ValueRank: ScalarOrOneDimension
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Default"
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: ns=5;GridLayoutProperties
+        Type: GridLayoutProperties
+        DisplayName: {"NamespaceIndex":5,"TextId":"GridLayoutPropertiesDisplayName"}
+        Children:
+        - Name: ColumnSpan
+          Type: BaseDataVariableType
+          DataType: Int32
+          ModellingRule: Optional
+          Value: 2
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
   - Name: Switch1
     Type: Switch
     Children:
@@ -2086,7 +2213,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 140.0
+      Value: 160.0
     - Name: Item
       Type: Alias
       DataType: NodeId
@@ -2099,7 +2226,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 190.0
+      Value: 170.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -4240,7 +4367,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 400.0
+      Value: 435.0
     - Name: Label1
       Type: Label
       Children:
@@ -4289,7 +4416,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 390.0
+      Value: 420.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4319,7 +4446,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 400.0
+      Value: 430.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -4356,7 +4483,7 @@ Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
-      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model"
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet"
       Children:
       - Name: ItemKind
         Type: PropertyType
@@ -4437,10 +4564,24 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Item}@Value"
+            - Name: StringFormatter1
+              Type: StringFormatter
+              Children:
+              - Name: Format
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"{0:x}"}
+              - Name: ns=3;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}@Value"
     - Name: SelectedItem
       Type: NodePointer
       DataType: NodeId
@@ -4471,7 +4612,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 310.0
+      Value: 400.0
     - Name: Item
       Type: Alias
       DataType: NodeId
