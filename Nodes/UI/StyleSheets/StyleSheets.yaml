@@ -608,6 +608,10 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+  - Name: FocusColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#65b2ef"
 - Name: FriendlyLight1
   Id: g=acb37394d3c49de70f4da43f26f5d43d
   Type: StyleSheet
@@ -881,6 +885,18 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+  - Name: InteractiveBackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f0f0f0"
+  - Name: TextColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#3b3b3b"
+  - Name: FocusColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#0fafff"
 - Name: ISAStyleSheet1
   Id: g=cbee75f57462e8d3c31a0c6a3ea09ca3
   Type: StyleSheet
@@ -1870,6 +1886,10 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+  - Name: FocusColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00bcd4"
 - Name: FeatureDemo2
   Id: g=8ec802466c127939609fdb6aef28403b
   Type: StyleSheet
@@ -2664,6 +2684,9 @@ Children:
     Children:
     - Name: Default
       Type: ScreenStyle
+  - Name: ScreenColor
+    Type: BaseDataVariableType
+    DataType: Color
 - Name: FlourishStyleSheet
   Id: g=40281747547715affd79423bd876320b
   Type: StyleSheet
@@ -3471,6 +3494,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.4000000059604645
+  - Name: FocusColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#62ff00"
 - Name: Crimson
   Id: g=99d055888ede512f217391eea99a0d7a
   Type: StyleSheet

@@ -51,3 +51,16 @@ Children:
   Type: BaseDataVariableType
   DataType: Color
   Value: "#ffffff"
+- Name: TextBoxHex
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: HexInputReturnError
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Herro"
+- Name: TextBoxHexReturnColor
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#000000"
+- File: NetLogixHexReturnRGBA/NetLogixHexReturnRGBA.yaml

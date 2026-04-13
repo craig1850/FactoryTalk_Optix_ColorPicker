@@ -1,0 +1,15 @@
+Name: NetLogixHexReturnRGBA
+Type: FolderType
+Children:
+- Name: RedByte
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: GreenByte
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: BlueByte
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: AlphaByte
+  Type: BaseDataVariableType
+  DataType: Int32

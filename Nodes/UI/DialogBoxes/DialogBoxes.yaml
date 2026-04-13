@@ -246,7 +246,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 110.0
+            Value: 100.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -428,7 +428,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 110.0
+            Value: 100.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -577,7 +577,7 @@ Children:
         DataType: HorizontalAlignment
         ModellingRule: Optional
         Value: 3
-      - Name: AlphaHorizontalLayout
+      - Name: HexInputBoxcHorizontalLayout
         Type: RowLayout
         Children:
         - Name: Width
@@ -589,18 +589,41 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 50.0
-        - Name: AlphaValueSpinBox
-          Type: SpinBox
+          Value: 40.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: Label1
+          Type: Label
           Children:
-          - Name: Value
+          - Name: Text
             Type: BaseDataVariableType
-            DataType: Double
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Hex Value Input"}
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+        - Name: TextBox1
+          Type: TextBox
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
             Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../AlphaGuage/Value"
+              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/TextBoxHex"
               Children:
               - Name: Mode
                 Type: BaseVariableType
@@ -611,111 +634,80 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 70.0
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: -1.0
-          - Name: MinValue
-            Type: BaseDataVariableType
-            DataType: Double
-            ModellingRule: Optional
-          - Name: MaxValue
-            Type: BaseDataVariableType
-            DataType: Double
-            ModellingRule: Optional
-            Value: 255.0
-          - Name: HorizontalAlignment
-            Type: BaseVariableType
-            DataType: HorizontalAlignment
-            ModellingRule: Optional
-          - Name: Format
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "d0"
-          - Name: LeftMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 10.0
-          - Name: RightMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: ShowButtons
-            Type: BaseDataVariableType
-            DataType: Boolean
-            ModellingRule: Optional
-            Value: true
+            Value: 110.0
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
-          - Name: FontSize
-            Type: BaseDataVariableType
+          - Name: LeftMargin
+            Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 13.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 3
-        - Name: AlphaLabel
+            Value: 10.0
+          - Name: PlaceholderText
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"#6e00b3be"}
+        - Name: Label2
           Type: Label
           Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Alpha"}
-          - Name: HorizontalAlignment
-            Type: BaseVariableType
-            DataType: HorizontalAlignment
-            ModellingRule: Optional
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: -1.0
-          - Name: TextColor
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#000000"
-          - Name: LeftMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 10.0
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/HexInputReturnError"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
+        - Name: Rectangle1
+          Type: Rectangle
+          Children:
           - Name: Width
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 35.0
-          - Name: FontSize
-            Type: BaseDataVariableType
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 13.0
-        - Name: AlphaGuage
-          Type: LinearGauge
-          Children:
-          - Name: Value
+            Value: 40.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 39.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: FillColor
             Type: BaseDataVariableType
-            DataType: Float
+            DataType: Color
+            Value: "#ffffff"
             Children:
-            - Name: AlphaARGBtoDecimal1
-              Type: AlphaARGBtoDecimal
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
               Children:
-              - Name: Source0
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "((Int32)trunc({3}) << 24) + ((Int32)trunc({0}) << 16) + ((Int32)trunc({1}) << 8) + (Int32)trunc({2})"
+              - Name: ns=3;Source0
                 Type: BaseDataVariableType
                 DataType: BaseDataType
                 ReferenceType: HasSource
@@ -723,89 +715,34 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{ColorBeingModified}"
-              - Name: Mode
-                Type: PropertyType
-                DataType: DynamicLinkMode
-                ReferenceType: HasComponent
-                ModellingRule: Optional
-          - Name: MinValue
-            Type: BaseDataVariableType
-            DataType: Float
-          - Name: MaxValue
-            Type: BaseDataVariableType
-            DataType: Float
-            Value: 255.0
-          - Name: WarningZones
-            Type: BaseObjectType
-          - Name: Width
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 220.0
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 12.0
-          - Name: ValueChangeBehaviour
-            Type: BaseDataVariableType
-            DataType: ValueChangeBehaviour
-            ModellingRule: Optional
-            Value: 1
-          - Name: Orientation
-            Type: BaseDataVariableType
-            DataType: OrientationEnum
-            ModellingRule: Optional
-          - Name: ScalePosition
-            Type: BaseDataVariableType
-            DataType: PositionEnum
-            ModellingRule: Optional
-            Value: 3
-          - Name: MajorTickCount
-            Type: BaseDataVariableType
-            DataType: Float
-            ModellingRule: Optional
-            Value: 4.0
-          - Name: MinorTickCount
-            Type: BaseDataVariableType
-            DataType: Float
-            ModellingRule: Optional
-            Value: 5.0
-          - Name: ScalePadding
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: LabelVisible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            ModellingRule: Optional
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 2
-          - Name: RightMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: TopMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: BottomMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: LeftMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 20.0
-        - Name: ContentAlignment
-          Type: BaseVariableType
-          DataType: ContentHorizontalAlignment
-          ModellingRule: Optional
+                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/RedByte"
+              - Name: ns=3;Source3
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/AlphaByte"
+              - Name: ns=3;Source1
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/GreenByte"
+              - Name: ns=3;Source2
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/BlueByte"
       - Name: RedHorizontalLayout
         Type: RowLayout
         Children:
@@ -818,7 +755,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 50.0
+          Value: 40.0
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment
@@ -938,23 +875,16 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Children:
-            - Name: RedARGBtoDecimal1
-              Type: RedARGBtoDecimal
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/RedByte"
               Children:
-              - Name: Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{ColorBeingModified}"
               - Name: Mode
-                Type: PropertyType
+                Type: BaseVariableType
                 DataType: DynamicLinkMode
-                ReferenceType: HasComponent
                 ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1020,6 +950,8 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
+          - Name: HexBoxInputChangedRed
+            Type: NetLogic
       - Name: GreenHorizontalLayout
         Type: RowLayout
         Children:
@@ -1032,7 +964,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 50.0
+          Value: 40.0
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment
@@ -1156,23 +1088,16 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Children:
-            - Name: GreenARGBtoDecimal1
-              Type: GreenARGBtoDecimal
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/GreenByte"
               Children:
-              - Name: Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{ColorBeingModified}"
               - Name: Mode
-                Type: PropertyType
+                Type: BaseVariableType
                 DataType: DynamicLinkMode
-                ReferenceType: HasComponent
                 ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1242,6 +1167,8 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
+          - Name: HexBoxInputChangedGreen
+            Type: NetLogic
       - Name: BlueHorizontalLayout
         Type: RowLayout
         Children:
@@ -1254,7 +1181,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 50.0
+          Value: 40.0
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment
@@ -1382,23 +1309,16 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Children:
-            - Name: BlueARGBtoDecimal1
-              Type: BlueARGBtoDecimal
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/BlueByte"
               Children:
-              - Name: Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{ColorBeingModified}"
               - Name: Mode
-                Type: PropertyType
+                Type: BaseVariableType
                 DataType: DynamicLinkMode
-                ReferenceType: HasComponent
                 ModellingRule: Optional
+                Value: 2
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1472,6 +1392,232 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
+          - Name: HexBoxInputChangedBlue
+            Type: NetLogic
+      - Name: AlphaHorizontalLayout
+        Type: RowLayout
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 40.0
+        - Name: AlphaValueSpinBox
+          Type: SpinBox
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Double
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../AlphaGuage/Value"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 70.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Double
+            ModellingRule: Optional
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Double
+            ModellingRule: Optional
+            Value: 255.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "d0"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: ShowButtons
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 13.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: AlphaLabel
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Alpha"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#000000"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 35.0
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 13.0
+        - Name: AlphaGuage
+          Type: LinearGauge
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Float
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/AlphaByte"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Float
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Float
+            Value: 255.0
+          - Name: WarningZones
+            Type: BaseObjectType
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 220.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 12.0
+          - Name: ValueChangeBehaviour
+            Type: BaseDataVariableType
+            DataType: ValueChangeBehaviour
+            ModellingRule: Optional
+            Value: 1
+          - Name: Orientation
+            Type: BaseDataVariableType
+            DataType: OrientationEnum
+            ModellingRule: Optional
+          - Name: ScalePosition
+            Type: BaseDataVariableType
+            DataType: PositionEnum
+            ModellingRule: Optional
+            Value: 3
+          - Name: MajorTickCount
+            Type: BaseDataVariableType
+            DataType: Float
+            ModellingRule: Optional
+            Value: 4.0
+          - Name: MinorTickCount
+            Type: BaseDataVariableType
+            DataType: Float
+            ModellingRule: Optional
+            Value: 5.0
+          - Name: ScalePadding
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: LabelVisible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 20.0
+          - Name: HexBoxInputChangedAlpha
+            Type: NetLogic
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: ContentHorizontalAlignment
+          ModellingRule: Optional
     - Name: ApplyColorButton
       Type: Button
       Children:
@@ -2176,3 +2322,5 @@ Children:
     DataType: Boolean
     ModellingRule: Optional
     Value: true
+  - Name: HexToRGBA
+    Type: NetLogic
