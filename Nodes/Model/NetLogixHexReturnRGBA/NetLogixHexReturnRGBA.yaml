@@ -13,3 +13,4 @@ Children:
 - Name: AlphaByte
   Type: BaseDataVariableType
   DataType: Int32
+  Value: 255

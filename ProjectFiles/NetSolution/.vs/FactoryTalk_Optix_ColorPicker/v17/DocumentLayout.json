@@ -1,26 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\",
+  "WorkspaceRootPath": "C:\\Users\\Maint\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|c:\\users\\admin\\documents\\rockwell automation\\factorytalk optix\\projects\\factorytalk_optix_colorpicker\\projectfiles\\netsolution\\hextorgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|c:\\users\\maint\\documents\\rockwell automation\\factorytalk optix\\projects\\factorytalk_optix_colorpicker\\projectfiles\\netsolution\\hextorgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|solutionrelative:hextorgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|c:\\users\\admin\\documents\\rockwell automation\\factorytalk optix\\projects\\factorytalk_optix_colorpicker\\projectfiles\\netsolution\\hexboxinputchangedred.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|solutionrelative:hexboxinputchangedred.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|c:\\users\\admin\\documents\\rockwell automation\\factorytalk optix\\projects\\factorytalk_optix_colorpicker\\projectfiles\\netsolution\\hexboxinputchangedgreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|solutionrelative:hexboxinputchangedgreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|c:\\users\\admin\\documents\\rockwell automation\\factorytalk optix\\projects\\factorytalk_optix_colorpicker\\projectfiles\\netsolution\\hexboxinputchangedblue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|solutionrelative:hexboxinputchangedblue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|c:\\users\\admin\\documents\\rockwell automation\\factorytalk optix\\projects\\factorytalk_optix_colorpicker\\projectfiles\\netsolution\\hexboxinputchangedalpha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|solutionrelative:hexboxinputchangedalpha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HexBoxInputChangedAlpha.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexBoxInputChangedAlpha.cs",
-              "RelativeDocumentMoniker": "HexBoxInputChangedAlpha.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexBoxInputChangedAlpha.cs",
-              "RelativeToolTip": "HexBoxInputChangedAlpha.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T12:39:40.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HexBoxInputChangedBlue.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexBoxInputChangedBlue.cs",
-              "RelativeDocumentMoniker": "HexBoxInputChangedBlue.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexBoxInputChangedBlue.cs",
-              "RelativeToolTip": "HexBoxInputChangedBlue.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA2wBsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T12:30:34.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HexBoxInputChangedGreen.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexBoxInputChangedGreen.cs",
-              "RelativeDocumentMoniker": "HexBoxInputChangedGreen.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexBoxInputChangedGreen.cs",
-              "RelativeToolTip": "HexBoxInputChangedGreen.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA1wBsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:50:58.243Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HexToRGBA.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexToRGBA.cs",
+              "DocumentMoniker": "C:\\Users\\Maint\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexToRGBA.cs",
               "RelativeDocumentMoniker": "HexToRGBA.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexToRGBA.cs",
+              "ToolTip": "C:\\Users\\Maint\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexToRGBA.cs",
               "RelativeToolTip": "HexToRGBA.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDMAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAADQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-12T11:46:09.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HexBoxInputChangedRed.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexBoxInputChangedRed.cs",
-              "RelativeDocumentMoniker": "HexBoxInputChangedRed.cs",
-              "ToolTip": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexBoxInputChangedRed.cs",
-              "RelativeToolTip": "HexBoxInputChangedRed.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAADwvzEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T11:27:06.988Z",
               "EditorCaption": ""
             }
           ]

@@ -229,6 +229,18 @@ Children:
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
+    - Name: HexInputEnabled
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
   - Name: WriteDelay
     Type: BaseDataVariableType
     DataType: Duration

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FactoryTalk_Optix_ColorPicker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d34706471b605ee73ffb6fe88d823619956b4e4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59914b7da3007d66db55c8e223a752289a73be29")]
 [assembly: System.Reflection.AssemblyProductAttribute("FactoryTalk_Optix_ColorPicker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FactoryTalk_Optix_ColorPicker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

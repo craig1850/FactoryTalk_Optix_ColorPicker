@@ -55,12 +55,8 @@ Children:
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
-- Name: HexInputReturnError
-  Type: BaseDataVariableType
-  DataType: String
-  Value: "Herro"
-- Name: TextBoxHexReturnColor
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#000000"
 - File: NetLogixHexReturnRGBA/NetLogixHexReturnRGBA.yaml
+- Name: EnableColorPickerHexBox
+  Id: g=801375ce59cf9b6bfd17354de7b80ee8
+  Type: BaseDataVariableType
+  DataType: Boolean
