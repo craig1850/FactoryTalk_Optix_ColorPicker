@@ -445,7 +445,6 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"New Color"}
             Children:
             - Name: StringFormatter1
               Type: StringFormatter
@@ -455,7 +454,7 @@ Children:
                 DataType: LocalizedText
                 ReferenceType: HasParameter
                 ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"New [ARGB]\n#{0:x}"}
+                Value: {"LocaleId":"en-US","Text":"({0:x}) + ({1:x}) + ({2:x}) + ({3:x})"}
               - Name: ns=3;Source0
                 Type: BaseDataVariableType
                 DataType: BaseDataType
@@ -464,7 +463,34 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "../../../../NewColorRectangle/FillColor"
+                  Value: "../../../../../RedHorizontalLayout/RedGuage/Value"
+              - Name: ns=3;Source1
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../GreenHorizontalLayout/GreenGuage/Value"
+              - Name: ns=3;Source2
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../BlueHorizontalLayout/BlueGuage/Value"
+              - Name: ns=3;Source3
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../AlphaHorizontalLayout/AlphaGuage/Value"
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -793,6 +819,8 @@ Children:
               Type: DynamicLink
               DataType: NodePath
               Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
+          - Name: ParseHexLogic
+            Type: NetLogic
         - Name: Checkbox1
           Type: CheckBox
           Children:
@@ -962,36 +990,23 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Children:
-            - Name: ConditionalConverter1
-              Type: ConditionalConverter
+            - Name: RedARGBtoDecimal1
+              Type: RedARGBtoDecimal
               Children:
-              - Name: Condition
+              - Name: Source0
                 Type: BaseDataVariableType
-                DataType: Boolean
+                DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
-              - Name: TrueValue
-                Type: BaseDataVariableType
-                DataType: Float
-                ReferenceType: HasParameter
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/RedByte"
-              - Name: FalseValue
-                Type: BaseDataVariableType
-                DataType: Float
-                ReferenceType: HasParameter
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../RedNormal"
+                  Value: "{ColorBeingModified}"
+              - Name: Mode
+                Type: PropertyType
+                DataType: DynamicLinkMode
+                ReferenceType: HasComponent
+                ModellingRule: Optional
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1214,36 +1229,23 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Children:
-            - Name: ConditionalConverter1
-              Type: ConditionalConverter
+            - Name: GreenARGBtoDecimal1
+              Type: GreenARGBtoDecimal
               Children:
-              - Name: Condition
+              - Name: Source0
                 Type: BaseDataVariableType
-                DataType: Boolean
+                DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
-              - Name: TrueValue
-                Type: BaseDataVariableType
-                DataType: Float
-                ReferenceType: HasParameter
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/GreenByte"
-              - Name: FalseValue
-                Type: BaseDataVariableType
-                DataType: Float
-                ReferenceType: HasParameter
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../GreenNormal"
+                  Value: "{ColorBeingModified}"
+              - Name: Mode
+                Type: PropertyType
+                DataType: DynamicLinkMode
+                ReferenceType: HasComponent
+                ModellingRule: Optional
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1474,36 +1476,23 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Children:
-            - Name: ConditionalConverter1
-              Type: ConditionalConverter
+            - Name: BlueARGBtoDecimal1
+              Type: BlueARGBtoDecimal
               Children:
-              - Name: Condition
+              - Name: Source0
                 Type: BaseDataVariableType
-                DataType: Boolean
+                DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
-              - Name: TrueValue
-                Type: BaseDataVariableType
-                DataType: Float
-                ReferenceType: HasParameter
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/BlueByte"
-              - Name: FalseValue
-                Type: BaseDataVariableType
-                DataType: Float
-                ReferenceType: HasParameter
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../BlueNormal"
+                  Value: "{ColorBeingModified}"
+              - Name: Mode
+                Type: PropertyType
+                DataType: DynamicLinkMode
+                ReferenceType: HasComponent
+                ModellingRule: Optional
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -1733,36 +1722,23 @@ Children:
             Type: BaseDataVariableType
             DataType: Float
             Children:
-            - Name: ConditionalConverter1
-              Type: ConditionalConverter
+            - Name: AlphaARGBtoDecimal1
+              Type: AlphaARGBtoDecimal
               Children:
-              - Name: Condition
+              - Name: Source0
                 Type: BaseDataVariableType
-                DataType: Boolean
+                DataType: BaseDataType
                 ReferenceType: HasSource
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
-              - Name: TrueValue
-                Type: BaseDataVariableType
-                DataType: Float
-                ReferenceType: HasParameter
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/NetLogixHexReturnRGBA/AlphaByte"
-              - Name: FalseValue
-                Type: BaseDataVariableType
-                DataType: Float
-                ReferenceType: HasParameter
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../AlphaNormal"
+                  Value: "{ColorBeingModified}"
+              - Name: Mode
+                Type: PropertyType
+                DataType: DynamicLinkMode
+                ReferenceType: HasComponent
+                ModellingRule: Optional
           - Name: MinValue
             Type: BaseDataVariableType
             DataType: Float
@@ -2189,31 +2165,6 @@ Children:
                 DataType: UInt32
                 Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-          - Name: MethodContainer2
-            Type: BaseObjectType
-            Children:
-            - Name: ns=3;ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../../../../..@NodeId"
-                Children:
-                - Name: Mode
-                  Type: BaseVariableType
-                  DataType: DynamicLinkMode
-                  ModellingRule: Optional
-                  Value: 2
-            - Name: ns=3;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "Close"
         - Name: EventArguments
           Type: MouseClickEvent
           Children:
@@ -2600,3 +2551,75 @@ Children:
     Value: true
   - Name: HexToRGBA
     Type: NetLogic
+    Children:
+    - Name: RedGuageVal
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ColorPicker/VerticalLayout1/RedHorizontalLayout/RedGuage/Value"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: GreenGuageVal
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ColorPicker/VerticalLayout1/GreenHorizontalLayout/GreenGuage/Value"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: BlueGuageVal
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ColorPicker/VerticalLayout1/BlueHorizontalLayout/BlueGuage/Value"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: AlphaGuageVal
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ColorPicker/VerticalLayout1/AlphaHorizontalLayout/AlphaGuage/Value"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: TextBoxHexSync
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ColorPicker/VerticalLayout1/PickedColorsHorizontalLayout/CurrentColorHexLabel/Text"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2

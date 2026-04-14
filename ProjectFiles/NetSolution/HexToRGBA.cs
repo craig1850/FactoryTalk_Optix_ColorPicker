@@ -29,19 +29,30 @@ public class HexToRGBA : BaseNetLogic
         if (IsHex(e.NewValue))  
         {
             try
-            {
-                var redbyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/RedByte");
-                redbyte.Value = HexToColor(e.NewValue).R;
-               
-                var greenbyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/GreenByte");
-                greenbyte.Value = HexToColor(e.NewValue).G;
-                
-                var bluebyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/BlueByte");
-                bluebyte.Value = HexToColor(e.NewValue).B;
-                
-                var alphabyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/AlphaByte");
-                alphabyte.Value = HexToColor(e.NewValue).A;
-               
+            {               
+                //var redbyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/RedByte");
+                //redbyte = HexToColor(e.NewValue).R;
+
+                LogicObject.GetVariable("RedGuageVal").Value = HexToColor(e.NewValue).R;
+
+                //var greenbyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/GreenByte");
+                //greenbyte.Value = HexToColor(e.NewValue).G;
+
+                LogicObject.GetVariable("GreenGuageVal").Value = HexToColor(e.NewValue).G;
+
+                //var bluebyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/BlueByte");
+                //bluebyte.Value = HexToColor(e.NewValue).B;
+
+                LogicObject.GetVariable("BlueGuageVal").Value = HexToColor(e.NewValue).B;
+
+                //var alphabyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/AlphaByte");
+                //alphabyte.Value = HexToColor(e.NewValue).A;
+
+                LogicObject.GetVariable("AlphaGuageVal").Value = HexToColor(e.NewValue).A;
+
+                string hexresult = HexToColor(e.NewValue).ToString();
+                LogicObject.GetVariable("TextBoxHexSync").Value = e.NewValue;
+
             }
             catch (Exception)
             {
@@ -78,8 +89,9 @@ public class HexToRGBA : BaseNetLogic
         {
             a = byte.Parse(hex.Substring(6, 2), NumberStyles.HexNumber);
         }
-
+        
         return Color.FromArgb(a, r, g, b);
+
     }
 
     public override void Stop()
