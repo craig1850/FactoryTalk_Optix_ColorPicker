@@ -177,25 +177,7 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Children:
-            - Name: StringFormatter1
-              Type: StringFormatter
-              Children:
-              - Name: Format
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"Current [ARGB]\n#{0:x}"}
-              - Name: ns=3;Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{ColorBeingModified}"
+            Value: {"LocaleId":"en-US","Text":"Current"}
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -434,6 +416,77 @@ Children:
               Type: BaseVariableType
               DataType: NodePath
               Value: "../FillColor"
+            - Name: VariableValueChangedEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../../HexToRGBA@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "UpdateCurrentColorLabel"
+              - Name: EventArguments
+                Type: VariableValueChangedEvent
+                Children:
+                - Name: VariableNodeId
+                  Type: BaseVariableType
+                  DataType: NodeId
+                - Name: NewValue
+                  Type: BaseVariableType
+                  DataType: BaseDataType
+                - Name: OldValue
+                  Type: BaseVariableType
+                  DataType: BaseDataType
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
@@ -445,52 +498,7 @@ Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Children:
-            - Name: StringFormatter1
-              Type: StringFormatter
-              Children:
-              - Name: Format
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ReferenceType: HasParameter
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"({0:x}) + ({1:x}) + ({2:x}) + ({3:x})"}
-              - Name: ns=3;Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../RedHorizontalLayout/RedGuage/Value"
-              - Name: ns=3;Source1
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../GreenHorizontalLayout/GreenGuage/Value"
-              - Name: ns=3;Source2
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../BlueHorizontalLayout/BlueGuage/Value"
-              - Name: ns=3;Source3
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../AlphaHorizontalLayout/AlphaGuage/Value"
+            Value: {"LocaleId":"en-US","Text":"New"}
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -718,6 +726,84 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 5.0
+          - Name: FillColorChanged
+            Type: VariableChangedEventDispatcher
+            Children:
+            - Name: VariableNodePath
+              Type: BaseVariableType
+              DataType: NodePath
+              Value: "../FillColor"
+            - Name: VariableValueChangedEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../../HexToRGBA@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "UpdateNewColorLabel"
+              - Name: EventArguments
+                Type: VariableValueChangedEvent
+                Children:
+                - Name: VariableNodeId
+                  Type: BaseVariableType
+                  DataType: NodeId
+                - Name: NewValue
+                  Type: BaseVariableType
+                  DataType: BaseDataType
+                - Name: OldValue
+                  Type: BaseVariableType
+                  DataType: BaseDataType
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
         - Name: HorizontalGap
           Type: BaseDataVariableType
           DataType: Size
@@ -768,11 +854,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
         - Name: TextBox1
           Type: TextBox
           Children:
@@ -789,7 +870,7 @@ Children:
                 Type: BaseVariableType
                 DataType: DynamicLinkMode
                 ModellingRule: Optional
-                Value: 2
+                Value: 1
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -814,50 +895,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
-          - Name: ParseHexLogic
-            Type: NetLogic
-        - Name: Checkbox1
-          Type: CheckBox
-          Children:
-          - Name: Checked
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/EnableColorPickerHexBox"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: Text
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Enable Hex Input"}
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 2
-          - Name: LeftMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 20.0
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 25.0
       - Name: RedHorizontalLayout
         Type: RowLayout
         Children:
@@ -1072,27 +1109,6 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
-          - Name: RedNormal
-            Type: BaseDataVariableType
-            DataType: Int32
-            Children:
-            - Name: RedARGBtoDecimal1
-              Type: RedARGBtoDecimal
-              Children:
-              - Name: Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{ColorBeingModified}"
-              - Name: Mode
-                Type: PropertyType
-                DataType: DynamicLinkMode
-                ReferenceType: HasComponent
-                ModellingRule: Optional
       - Name: GreenHorizontalLayout
         Type: RowLayout
         Children:
@@ -1315,27 +1331,6 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
-          - Name: GreenNormal
-            Type: BaseDataVariableType
-            DataType: Int32
-            Children:
-            - Name: GreenARGBtoDecimal1
-              Type: GreenARGBtoDecimal
-              Children:
-              - Name: Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{ColorBeingModified}"
-              - Name: Mode
-                Type: PropertyType
-                DataType: DynamicLinkMode
-                ReferenceType: HasComponent
-                ModellingRule: Optional
       - Name: BlueHorizontalLayout
         Type: RowLayout
         Children:
@@ -1566,27 +1561,6 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
-          - Name: BlueNormal
-            Type: BaseDataVariableType
-            DataType: Int32
-            Children:
-            - Name: BlueARGBtoDecimal1
-              Type: BlueARGBtoDecimal
-              Children:
-              - Name: Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{ColorBeingModified}"
-              - Name: Mode
-                Type: PropertyType
-                DataType: DynamicLinkMode
-                ReferenceType: HasComponent
-                ModellingRule: Optional
       - Name: AlphaHorizontalLayout
         Type: RowLayout
         Children:
@@ -1812,27 +1786,6 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 20.0
-          - Name: AlphaNormal
-            Type: BaseDataVariableType
-            DataType: Int32
-            Children:
-            - Name: AlphaARGBtoDecimal1
-              Type: AlphaARGBtoDecimal
-              Children:
-              - Name: Source0
-                Type: BaseDataVariableType
-                DataType: BaseDataType
-                ReferenceType: HasSource
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{ColorBeingModified}"
-              - Name: Mode
-                Type: PropertyType
-                DataType: DynamicLinkMode
-                ReferenceType: HasComponent
-                ModellingRule: Optional
         - Name: ContentAlignment
           Type: BaseVariableType
           DataType: ContentHorizontalAlignment
@@ -2608,7 +2561,52 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
-    - Name: TextBoxHexSync
+    - Name: NewColorFillColor
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ColorPicker/VerticalLayout1/PickedColorsHorizontalLayout/NewColorRectangle/FillColor"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: NewColorLabelUpdate
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ColorPicker/VerticalLayout1/PickedColorsHorizontalLayout/NewColorHexLabel/Text"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Class: Method
+      Name: UpdateNewColorLabel
+    - Name: CurrentColorFillColor
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{ColorBeingModified}"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: CurrentColorLabelUpdate
       Type: BaseDataVariableType
       DataType: String
       Value: "0"
@@ -2623,3 +2621,20 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
+    - Class: Method
+      Name: UpdateCurrentColorLabel
+    - Name: UpdateHexBoxText
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ColorPicker/VerticalLayout1/HexInputBoxcHorizontalLayout/TextBox1/Text"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1

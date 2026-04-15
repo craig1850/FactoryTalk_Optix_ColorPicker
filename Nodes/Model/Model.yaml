@@ -55,8 +55,4 @@ Children:
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
-- File: NetLogixHexReturnRGBA/NetLogixHexReturnRGBA.yaml
-- Name: EnableColorPickerHexBox
-  Id: g=801375ce59cf9b6bfd17354de7b80ee8
-  Type: BaseDataVariableType
-  DataType: Boolean
+- File: DefaultStyleColorModel/DefaultStyleColorModel.yaml

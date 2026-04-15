@@ -17,50 +17,35 @@ using OpcUa = UAManagedCore.OpcUa;
 
 public class HexToRGBA : BaseNetLogic
 {
-    private IUAVariable hexstring;      
-       
+    private IUAVariable hexstring;
+    private bool blockrepeat;
+
     public override void Start()
     {
+        UpdateCurrentColorLabel();
+        UpdateNewColorLabel();
         hexstring = Project.Current.GetVariable("Model/TextBoxHex");
         hexstring.VariableChange += Hexstring_VariableChange; 
     }
     private void Hexstring_VariableChange(object sender, VariableChangeEventArgs e)
-    {      
+    {
+       
+        blockrepeat = true;
         if (IsHex(e.NewValue))  
         {
             try
-            {               
-                //var redbyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/RedByte");
-                //redbyte = HexToColor(e.NewValue).R;
-
-                LogicObject.GetVariable("RedGuageVal").Value = HexToColor(e.NewValue).R;
-
-                //var greenbyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/GreenByte");
-                //greenbyte.Value = HexToColor(e.NewValue).G;
-
-                LogicObject.GetVariable("GreenGuageVal").Value = HexToColor(e.NewValue).G;
-
-                //var bluebyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/BlueByte");
-                //bluebyte.Value = HexToColor(e.NewValue).B;
-
+            {    
+                LogicObject.GetVariable("RedGuageVal").Value = HexToColor(e.NewValue).R;               
+                LogicObject.GetVariable("GreenGuageVal").Value = HexToColor(e.NewValue).G;               
                 LogicObject.GetVariable("BlueGuageVal").Value = HexToColor(e.NewValue).B;
-
-                //var alphabyte = Project.Current.GetVariable("Model/NetLogixHexReturnRGBA/AlphaByte");
-                //alphabyte.Value = HexToColor(e.NewValue).A;
-
                 LogicObject.GetVariable("AlphaGuageVal").Value = HexToColor(e.NewValue).A;
-
-                string hexresult = HexToColor(e.NewValue).ToString();
-                LogicObject.GetVariable("TextBoxHexSync").Value = e.NewValue;
-
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                //throw;
+                Log.Info($"Error: {ex.Message}");                
             }           
-        }      
-
+        }  
+        blockrepeat = false;
     }   
 
     private static bool IsHex(string input)
@@ -91,7 +76,6 @@ public class HexToRGBA : BaseNetLogic
         }
         
         return Color.FromArgb(a, r, g, b);
-
     }
 
     public override void Stop()
@@ -99,4 +83,37 @@ public class HexToRGBA : BaseNetLogic
         hexstring.VariableChange -= Hexstring_VariableChange;        
     }
 
+    [ExportMethod]
+    public void UpdateNewColorLabel()
+    {
+        int decimalcolor = LogicObject.GetVariable("NewColorFillColor").Value;
+        string hex = $"#{(decimalcolor & 0xFFFFFFFF):x8}";
+
+        hex = hex.Replace("#", "");
+        string one = hex.Substring(0, 2);
+        string two = hex.Substring(2, 6);
+
+        string result = "#" + two + one;
+        LogicObject.GetVariable("NewColorLabelUpdate").Value = "New [RGBA]" + Environment.NewLine + result;
+
+        if (!blockrepeat)
+        {
+            //Log.Info("UpdatingHexyBox");
+            LogicObject.GetVariable("UpdateHexBoxText").Value = result;
+        }
+    }
+
+    [ExportMethod]
+    public void UpdateCurrentColorLabel()
+    {
+        int decimalcolor = LogicObject.GetVariable("CurrentColorFillColor").Value;
+        string hex = $"#{(decimalcolor & 0xFFFFFFFF):x8}";
+
+        hex = hex.Replace("#", "");
+        string one = hex.Substring(0, 2);
+        string two = hex.Substring(2, 6);
+
+        string result = "#" + two + one;       
+        LogicObject.GetVariable("CurrentColorLabelUpdate").Value = "Current [RGBA]" + Environment.NewLine + result;        
+    }
 }

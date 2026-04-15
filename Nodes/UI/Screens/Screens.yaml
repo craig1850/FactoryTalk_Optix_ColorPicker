@@ -4483,7 +4483,7 @@ Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
-      Value: "/Objects/FactoryTalk_Optix_ColorPicker/UI/StyleSheets/DefaultStyleSheet"
+      Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/DefaultStyleColorModel"
       Children:
       - Name: ItemKind
         Type: PropertyType
@@ -4504,7 +4504,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Item Name"}
+          Value: {"LocaleId":"en-US","Text":"Default Style Sheet Theme Colors"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -4539,7 +4539,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Item Value"}
+          Value: {"LocaleId":"en-US","Text":"Hexadecimal Color Value - [ARGB] Format   "}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size

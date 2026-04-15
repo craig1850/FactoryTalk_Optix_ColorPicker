@@ -1,0 +1,121 @@
+Name: DefaultStyleColorModel
+Id: g=c359f9955801e29e2ceb958242c9b34e
+Type: FolderType
+Children:
+- Name: Window Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/WindowColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Text Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/TextColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Border Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/BorderColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Accent Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/AccentColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: AccentText Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/AccentTextColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Data Input Background Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/DataInputBackgroundColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Data Input Text Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/DataInputTextColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Interactive Controls Background Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/InteractiveBackgroundColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Interactive Controls Color
+  Type: BaseDataVariableType
+  DataType: Color
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../UI/StyleSheets/DefaultStyleSheet/InteractiveColor"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
