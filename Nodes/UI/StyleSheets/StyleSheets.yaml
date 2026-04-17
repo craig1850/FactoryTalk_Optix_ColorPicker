@@ -117,6 +117,13 @@ Children:
     Children:
     - Name: Default
       Type: GaugeStyle
+    - Name: BigHandleGaugeStyle
+      Type: GaugeStyle
+      Children:
+      - Name: HandleSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 35.0
   - Name: NavigationPanelStyles
     Type: BaseObjectType
     Children:

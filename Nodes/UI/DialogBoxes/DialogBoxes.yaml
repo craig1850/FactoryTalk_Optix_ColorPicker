@@ -13,12 +13,12 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 470.0
+    Value: 490.0
   - Name: Height
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 270.0
+    Value: 320.0
   - Name: ColorPicker
     Type: Rectangle
     Children:
@@ -85,7 +85,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 20.0
+          Value: 25.0
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment
@@ -158,6 +158,10 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 14.0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
       - Name: PickedColorsHorizontalLayout
         Type: RowLayout
         Children:
@@ -242,6 +246,7 @@ Children:
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
+            Value: 2
           - Name: CornerRadius
             Type: BaseDataVariableType
             DataType: Size
@@ -565,6 +570,7 @@ Children:
             Type: BaseVariableType
             DataType: VerticalAlignment
             ModellingRule: Optional
+            Value: 2
           - Name: CornerRadius
             Type: BaseDataVariableType
             DataType: Size
@@ -804,11 +810,25 @@ Children:
                 - Name: Severity
                   Type: PropertyType
                   DataType: UInt16
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 65.0
         - Name: HorizontalGap
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 5.0
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: ContentHorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -895,6 +915,39 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: ContentHorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: SpacerPanel
+          Type: Panel
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 190.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
       - Name: RedHorizontalLayout
         Type: RowLayout
         Children:
@@ -1109,6 +1162,16 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
+          - Name: GaugeStyle
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "BigHandleGaugeStyle"
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
       - Name: GreenHorizontalLayout
         Type: RowLayout
         Children:
@@ -1331,6 +1394,16 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
+          - Name: GaugeStyle
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "BigHandleGaugeStyle"
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
       - Name: BlueHorizontalLayout
         Type: RowLayout
         Children:
@@ -1561,6 +1634,16 @@ Children:
             DataType: VerticalAlignment
             ModellingRule: Optional
             Value: 2
+          - Name: GaugeStyle
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "BigHandleGaugeStyle"
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
       - Name: AlphaHorizontalLayout
         Type: RowLayout
         Children:
@@ -1786,10 +1869,20 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 20.0
+          - Name: GaugeStyle
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "BigHandleGaugeStyle"
         - Name: ContentAlignment
           Type: BaseVariableType
           DataType: ContentHorizontalAlignment
           ModellingRule: Optional
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
     - Name: ApplyColorButton
       Type: Button
       Children:
@@ -1906,6 +1999,26 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
     - Name: DefaultColorButton
       Type: Button
       Children:
@@ -2149,6 +2262,7 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
+        Value: 1
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -2190,11 +2304,22 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
+        Value: 10.0
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 13.0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
     - Name: CancelCloseButton
       Type: Button
       Children:
@@ -2461,6 +2586,26 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
   - Name: ColorBeingModified
     Type: Alias
     DataType: NodeId
@@ -2638,3 +2783,8 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 1
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 2

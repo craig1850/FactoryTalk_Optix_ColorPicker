@@ -14,16 +14,19 @@ Children:
   Id: g=766dbfaed80f42e2a053d37d4121fab3
   Type: BaseDataVariableType
   DataType: String
+  Description: {"LocaleId":"en-US","Text":"Used for Title Text in Color Picker"}
   Value: "Placeholder"
 - Name: StyleSheetTrue
   Id: g=81a123309e36c74f0e3eb76cf3e4f53d
   Type: BaseDataVariableType
   DataType: Boolean
+  Description: {"LocaleId":"en-US","Text":"Used for visibilty of Default Button"}
   Value: true
 - Name: StyleSheetFalse
   Id: g=4b26ef29fdca41f17997ddd200c72a99
   Type: BaseDataVariableType
   DataType: Boolean
+  Description: {"LocaleId":"en-US","Text":"Used for visibilty of Default Button"}
 - Name: NavPanelsAppearance
   Type: BaseDataVariableType
   DataType: String
