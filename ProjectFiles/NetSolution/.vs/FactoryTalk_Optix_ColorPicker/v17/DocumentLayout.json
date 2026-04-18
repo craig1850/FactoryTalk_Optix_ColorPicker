@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Maint\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|c:\\users\\admin\\documents\\rockwell automation\\factorytalk optix\\projects\\factorytalk_optix_colorpicker\\projectfiles\\netsolution\\hextorgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B40EA9-67FC-7A36-468E-3C83ECBA6E5A}|FactoryTalk_Optix_ColorPicker.csproj|solutionrelative:hextorgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HexToRGBA.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexToRGBA.cs",
+              "RelativeDocumentMoniker": "HexToRGBA.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\Rockwell Automation\\FactoryTalk Optix\\Projects\\FactoryTalk_Optix_ColorPicker\\ProjectFiles\\NetSolution\\HexToRGBA.cs",
+              "RelativeToolTip": "HexToRGBA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T21:51:10.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

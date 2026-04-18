@@ -24,7 +24,7 @@ public class HexToRGBA : BaseNetLogic
     {
         UpdateCurrentColorLabel();
         UpdateNewColorLabel();
-        hexstring = Project.Current.GetVariable("Model/TextBoxHex");
+        hexstring = LogicObject.GetVariable("TextBoxHex");
         hexstring.VariableChange += Hexstring_VariableChange; 
     }
     private void Hexstring_VariableChange(object sender, VariableChangeEventArgs e)

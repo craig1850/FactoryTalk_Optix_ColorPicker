@@ -884,7 +884,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/FactoryTalk_Optix_ColorPicker/Model/TextBoxHex"
+              Value: "../../../../../HexToRGBA/TextBoxHex"
               Children:
               - Name: Mode
                 Type: BaseVariableType
@@ -2783,6 +2783,10 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 1
+    - Name: TextBoxHex
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
